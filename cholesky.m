@@ -12,7 +12,7 @@ function L=cholesky(A)
       for m=1:1:k-1
         suma2=suma2+L(i,m)*L(k,m);
       end
+      L(i,k)=(A(i,k)-suma2)/L(k,k);
     end
-    L(i,k)=(A(i,k)-suma2)/L(k,k);
   end
 endfunction
