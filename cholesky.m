@@ -6,7 +6,7 @@ function L=cholesky(A)
     for i=1:1:k-1
       suma=suma+L(k,i)^2;
     end
-    (k,k)=(A(k,k)-suma)^(1/2)
+    L(k,k)=(A(k,k)-suma)^(1/2)
     for i=k+1:1:n
       suma2=0;
       for m=1:1:k-1
