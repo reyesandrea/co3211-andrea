@@ -8,6 +8,3 @@ function[x,k,r]=potencia(A,error,x,itmax)
         x=y/norm(y,inf);
     end
 end
-
-% Debo llamar la funcion asi: [x,k,r]=potencia(A,error,x,itmax)
-% para que me aparezcan los 3 resultados
